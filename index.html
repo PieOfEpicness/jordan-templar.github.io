@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- import fonts here -->
+
+    <title>Author Website</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- menu header -->
+    <div id="header-placeholder"></div>
+    <!-- load header -->
+    <script>
+      fetch("header.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("header-placeholder").innerHTML = html;
+        });
+    </script>
+
+    <div class="container">
+      <header>
+        <!-- edit author headshot below -->
+        <img
+          src="https://cdn.glitch.global/ccee1a26-57fe-4947-b3ca-d97691f4101c/picrew.png?v=1746422973332"
+          alt="Author Headshot"
+        />
+        <h1>Jordan Templar</h1>
+        <p>Writer</p>
+      </header>
+
+      <section class="bio">
+        <!-- edit author bio below -->
+        <p>
+          Jordan Templar is an up-and-coming screenwriter based in Naarm
+          (Melbourne.) They have been writing for many years, and are ready to
+          take the next step in their career. Their work is inspired by the
+          things they love: video games, books, film and TV, their friends,
+          family, and cat Lionel.
+        </p>
+
+        <p>
+          Jordan is a believer in the power of storytelling, dedicated to
+          bringing diversity into every area of film, TV and video game
+          creation. They are neurodiverse, queer and disabled. They are
+          currently studying at RMIT (Bachelor's of Creative Writing), and also
+          have an Advanced Diploma of Professional Screenwriting. They are
+          interested in writing for film, TV and video games.
+        </p>
+      </section>
+
+      <section class="publications">
+        <h2>Publication History</h2>
+        <!-- edit author publications below, creating new list items -->
+        <ul>
+          <li>
+            <a href="https://bowenstreetpress.com/templar-dear-micah"
+              >dear micah (2024)</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="contact">
+        <h2>Contact</h2>
+        <p>
+          Email: <a href="mailto:jteigh1904@gmail.com">jteigh1904@gmail.com</a>
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
